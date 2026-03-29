@@ -12,6 +12,7 @@ const item = {
     colors:["red","pink"]
 };
 
+//4
 const post = {
     username: "@vishal123",
     content: "This is my @firstpost",
@@ -20,6 +21,7 @@ const post = {
     tags:["@first","newjoined"]
 }
 
+// 5. 
 // js convert objects literal keys into string automatically
 
 const example = {
@@ -29,3 +31,54 @@ const example = {
     true:"d",
     undefined:"e"
 }
+
+// 6. 
+student["name"] = "nishad"
+student["gender"] = "male"
+
+student["marks"] = [4,5,2]
+console.log(student)
+
+// to delete a key
+delete student.marks;
+console.log(student)
+
+
+// 7. object of objects
+
+const classInfo = {
+    vishal:{
+        grade:"A+",
+        city:"delhi"
+    },
+    ravi:{
+        grade:"B",
+        city:"mumbai"
+    },
+    karan:{
+        grade:"C",
+        city:"Lucknow"
+    }
+}
+console.log()
+console.log(classInfo)
+classInfo["vishal"]["city"] = "gurgaon"
+console.log(classInfo)
+console.log(classInfo.vishal.grade)
+
+//8. Array of objects
+const classInfoArr = [
+    {
+        name:"vishal",
+        grade:"A",
+        city:"delhi"
+    },
+    {
+        name:"deepak",
+        grade:"B",
+        city:"Patna"
+    }
+]
+classInfoArr[0]["gender"] = "male"
+console.log(classInfoArr)
+console.log(classInfoArr[0]["name"])
