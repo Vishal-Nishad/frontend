@@ -82,3 +82,20 @@ const classInfoArr = [
 classInfoArr[0]["gender"] = "male"
 console.log(classInfoArr)
 console.log(classInfoArr[0]["name"])
+
+//9. Math object
+console.log(Math.pow(2,3))
+console.log(Math.floor(5.54444))
+console.log(Math.abs(-12.3))
+console.log(Math.random()) // generate number 0 <n<1
+
+// 10. Random integers
+let num = Math.random()
+num = Math.floor(num * 100)
+console.log(num+1)
+
+// 11. question- generate a random number from any given n int
+console.log(Math.floor(Math.random() * 5) + 20)
+
+// assignment question, printing dice 1-6 random number
+console.log(Math.floor(Math.random()*6)+1)
