@@ -45,9 +45,20 @@ function naturalSum(n){
     sum = 0
     for(let i=1;i<=n;i++){
         sum = sum + i;
-        console.log(sum)
+        // console.log(sum)
     }
     return sum
 }
 naturalSum(5)
-// console.log(naturalSum(5))
+console.log(naturalSum(5))
+
+// 9. function which return concatenation of all strings in an array
+function concatStrArr(ar){
+    let result = "";
+    for(let i= 0;i<ar.length;i++){
+        result += ar[i];
+    }
+    return result;
+}
+a = ["hello","i","am","vishal"]
+console.log(concatStrArr(a));
