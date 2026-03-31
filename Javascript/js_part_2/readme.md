@@ -174,3 +174,244 @@ Or even simpler:
 
 * **Block scope = variable stays inside its `{}` room**
 * **Lexical scope = function can see variables from rooms around where it was created**
+
+
+
+# 6) Interview-level one-line answer
+
+## Block Scope means:
+
+> A variable declared with `let` or `const` is only accessible inside the `{}` block where it was declared.
+
+---
+
+# -) Real example with `if`
+
+```js id="r2vsyg"
+if (true) {
+    let msg = "hello";
+    console.log(msg); // works
+}
+
+console.log(msg); // ReferenceError
+```
+
+Why?
+
+Because `msg` only exists inside the `if` block.
+
+---
+
+# -) Real example with `for`
+
+```js id="s0s29d"
+for (let i = 0; i < 3; i++) {
+    console.log(i); // works
+}
+
+console.log(i); // ReferenceError
+```
+
+Why?
+
+Because `i` is block scoped to the `for` loop.
+
+# 7) Best combined example
+
+```js id="q0op5j"
+let globalVar = "global";
+
+function outer() {
+    let outerVar = "outer";
+
+    if (true) {
+        let blockVar = "block";
+
+        function inner() {
+            console.log(globalVar); // works
+            console.log(outerVar);  // works
+            console.log(blockVar);  // works
+        }
+
+        inner();
+    }
+
+    // console.log(blockVar); // ReferenceError
+}
+
+outer();
+```
+
+Now understand this carefully:
+
+---
+
+## Why does `inner()` access `blockVar`?
+
+Because of **lexical scope**.
+
+`inner()` was written inside the block where `blockVar` exists.
+
+So it can access it.
+
+---
+
+## Why does this fail?
+
+```js id="8v64ul"
+console.log(blockVar);
+```
+
+Because of **block scope**.
+
+`blockVar` only exists inside that `if` block.
+
+---
+
+# This is the exact connection
+
+## Block scope defines where variables live
+
+## Lexical scope defines how functions capture/access them
+
+That is the clean relationship.
+
+---
+
+# 8) Most common interview trap
+
+## Trap:
+
+```js id="8s9a8g"
+if (true) {
+    let a = 10;
+    var b = 20;
+}
+
+console.log(a); // ?
+console.log(b); // ?
+```
+
+Answer:
+
+```id="m2j24w"
+console.log(a); // ReferenceError
+console.log(b); // 20
+```
+
+Why?
+
+* `a` → block scoped
+* `b` → function scoped
+
+---
+
+# 9) Another interview trap
+
+```js id="2a80qc"
+let x = 1;
+
+function outer() {
+    let x = 2;
+
+    function inner() {
+        console.log(x);
+    }
+
+    inner();
+}
+
+outer();
+```
+
+Output?
+
+```id="l4trfx"
+2
+```
+
+Why not `1`?
+
+Because of **lexical scope**.
+
+`inner()` is written inside `outer()`, so it captures `outer`’s `x`.
+
+---
+
+# Super clean rule
+
+## Function uses nearest available variable in lexical chain
+
+JS looks upward and stops at the first match.
+
+---
+
+# Example
+
+```js id="ykh6mh"
+let x = "global";
+
+function outer() {
+    let x = "outer";
+
+    function inner() {
+        let x = "inner";
+        console.log(x);
+    }
+
+    inner();
+}
+
+outer();
+```
+
+Output:
+
+```id="8v47uv"
+inner
+```
+
+Because JS finds nearest `x` first.
+
+This is called **shadowing**.
+
+---
+
+# 10) Shadowing
+
+## Shadowing = inner variable hides outer variable
+
+Example:
+
+```js id="2z6z4m"
+let user = "global";
+
+function test() {
+    let user = "local";
+    console.log(user);
+}
+
+test();
+```
+
+Output:
+
+```id="otvxbk"
+local
+```
+
+Why?
+
+Because local `user` shadows global `user`.
+
+---
+
+# Rule
+
+When JS looks for variable:
+
+```js id="8z2tqz"
+console.log(user)
+```
+
+it always uses the **nearest matching variable**.
