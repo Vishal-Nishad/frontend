@@ -62,3 +62,6 @@ function concatStrArr(ar){
 }
 a = ["hello","i","am","vishal"]
 console.log(concatStrArr(a));
+
+
+// 10. Scope in js
