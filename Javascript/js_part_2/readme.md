@@ -79,9 +79,6 @@ Or even simpler:
 
 
 
-
-
-
 # **Block Scope vs Lexical Scope**
 
 ## **1) Definition**
@@ -177,7 +174,7 @@ Or even simpler:
 
 
 
-# 6) Interview-level one-line answer
+## 6) Interview-level one-line answer
 
 ## Block Scope means:
 
@@ -185,7 +182,7 @@ Or even simpler:
 
 ---
 
-# -) Real example with `if`
+## -) Real example with `if`
 
 ```js id="r2vsyg"
 if (true) {
@@ -202,7 +199,7 @@ Because `msg` only exists inside the `if` block.
 
 ---
 
-# -) Real example with `for`
+## -) Real example with `for`
 
 ```js id="s0s29d"
 for (let i = 0; i < 3; i++) {
@@ -216,7 +213,7 @@ Why?
 
 Because `i` is block scoped to the `for` loop.
 
-# 7) Best combined example
+## 7) Best combined example
 
 ```js id="q0op5j"
 let globalVar = "global";
@@ -268,7 +265,7 @@ Because of **block scope**.
 
 ---
 
-# This is the exact connection
+## This is the exact connection
 
 ## Block scope defines where variables live
 
@@ -278,7 +275,7 @@ That is the clean relationship.
 
 ---
 
-# 8) Most common interview trap
+## 8) Most common interview trap
 
 ## Trap:
 
@@ -306,7 +303,7 @@ Why?
 
 ---
 
-# 9) Another interview trap
+## 9) Another interview trap
 
 ```js id="2a80qc"
 let x = 1;
@@ -338,7 +335,7 @@ Because of **lexical scope**.
 
 ---
 
-# Super clean rule
+## Super clean rule
 
 ## Function uses nearest available variable in lexical chain
 
@@ -346,7 +343,7 @@ JS looks upward and stops at the first match.
 
 ---
 
-# Example
+## Example
 
 ```js id="ykh6mh"
 let x = "global";
@@ -377,7 +374,7 @@ This is called **shadowing**.
 
 ---
 
-# 10) Shadowing
+## 10) Shadowing
 
 ## Shadowing = inner variable hides outer variable
 
@@ -406,7 +403,7 @@ Because local `user` shadows global `user`.
 
 ---
 
-# Rule
+## Rule
 
 When JS looks for variable:
 

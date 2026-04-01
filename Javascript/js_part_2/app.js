@@ -79,4 +79,21 @@ function multipleGreet(func,count){
 multipleGreet(greet,200) // always pass definition, don't execute like greet()
 multipleGreet(function(){console.log("vishal")},10)
 
-// 16. higher order functions return, example taken factory function which return functions
+// 16. higher order functions return, example taken factory function which return 
+
+function oddEvenFunc(req){
+    if (req == "odd"){
+        return function(n){
+            console.log(!(n%2==0))
+        }
+    }else if(req == "even"){
+        return function(n){
+            console.log(n%2==0)
+        }
+    }else{
+        console.log("enter valid request")
+    }
+}
+
+fun = oddEvenFunc("odd")
+fun(56)
