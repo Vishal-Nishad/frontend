@@ -97,3 +97,29 @@ function oddEvenFunc(req){
 
 fun = oddEvenFunc("odd")
 fun(56)
+
+// 17. methods, in object variable we can write fun in place of values: - 
+// Actions that can be performed on objects
+const calculator = {
+    add:function(a,b){
+        return a+b
+    },
+    subtract:function(a,b){
+        return a-b
+    },
+    product:function(a,b){
+        return a*b
+    }
+}
+
+console.log(calculator.subtract(3,4))
+
+//methods shorthhand
+const calc = {
+    add(a,b){
+        return a+b
+    },
+    sub(a,b){
+        return a-b
+    }
+}
