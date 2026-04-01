@@ -64,4 +64,19 @@ a = ["hello","i","am","vishal"]
 console.log(concatStrArr(a));
 
 
-// 10. Scope in js
+// 15. Higher order functions
+// takes one or multiple functions as arguments
+
+let greet = function(){  // this is called function expression, we define function by variable
+    console.log("hello") // variable name, and also call like greet()
+}
+
+function multipleGreet(func,count){
+    for(let i = 1;i <= count;i++){
+        func();
+    }
+}
+multipleGreet(greet,200) // always pass definition, don't execute like greet()
+multipleGreet(function(){console.log("vishal")},10)
+
+// 16. higher order functions return, example taken factory function which return functions
