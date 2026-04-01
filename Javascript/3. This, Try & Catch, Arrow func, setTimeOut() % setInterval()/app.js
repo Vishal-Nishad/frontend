@@ -62,3 +62,6 @@ setTimeout(()=>{
 console.log("finally printed")
 
 // 6. setInterval function
+// setInterval(func,timeout in ms) , difference from setTimeout is that setInterval with 
+// given time period execute constantly without stoping, so to stop we have to call 
+// clearInterval
