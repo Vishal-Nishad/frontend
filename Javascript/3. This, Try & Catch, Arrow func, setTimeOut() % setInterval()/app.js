@@ -60,3 +60,5 @@ setTimeout(()=>{
     console.log("vishal learning")
 },4000);
 console.log("finally printed")
+
+// 6. setInterval function
