@@ -75,3 +75,7 @@ let id = setInterval(()=>{
 console.log(id);
 
 clearInterval(id)
+
+
+//7. this with arrow function, if we use this keyword inside arrow function then it 
+// print global object window not like object 
