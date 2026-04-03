@@ -25,3 +25,6 @@ let st = [
 st.forEach((student)=>{
     console.log(student.marks)
 })
+
+
+//2. Map and filter function
