@@ -28,3 +28,6 @@ st.forEach((student)=>{
 
 
 //2. Map and filter function
+let num = [1,2,3,4]
+let doublt = num.map((x)=>{console.log(x*2)})
+doublt
