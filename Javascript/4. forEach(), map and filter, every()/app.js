@@ -112,3 +112,27 @@ function addition(a,b=5){
 }
 console.log(addition(10),"addition default arguments")
 console.log(addition(10,30),"addition default arguments")
+
+
+// 8. Spread
+// Expands an iterable(array,string etc) into multiple values
+//function func(...arr){//dosomething}
+let arVal = [10,110,30]
+console.log(10,110,30)
+console.log(arVal)
+console.log(...arVal)
+console.log(Math.min(4,2,5,2,0))
+console.log(Math.min(10,110,30))
+console.log(Math.min(arVal))
+console.log(Math.min(...arVal))
+
+
+// 9. Spread(Array Literals)
+let arr = [1,2,3,4,5]
+let newArr = [...arr] /// it creates a deepcopy/separate, changing/modification in 
+// newArr does not reflect/affect arr
+
+const odd = [3,5,7]
+const even = [2,4,6,8]
+let newNum = [...even,...odd]
+console.log(newNum,"newnum")
