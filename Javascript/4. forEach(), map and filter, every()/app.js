@@ -101,3 +101,14 @@ let minVal = val.reduce((min,el)=>{
     }
 })
 console.log(minVal,"minval")
+
+// 7. Default Parameters
+// Giving a default value to the arguments
+// function func(a,b = 2){
+//do something
+// }
+function addition(a,b=5){
+    return a+b
+}
+console.log(addition(10),"addition default arguments")
+console.log(addition(10,30),"addition default arguments")
