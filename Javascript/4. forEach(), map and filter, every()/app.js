@@ -76,3 +76,13 @@ let maxVal = (ar)=>{
     return res
 }
 console.log(maxVal(val),"maxVal")
+// now using reduce method
+let ans = val.reduce((max,el)=>{
+    if(max>el){
+        return max
+    }else{
+        return el
+    }
+});
+console.log(ans,"maximum using reduce method")
+
