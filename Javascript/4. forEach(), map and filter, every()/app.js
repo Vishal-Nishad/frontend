@@ -86,3 +86,18 @@ let ans = val.reduce((max,el)=>{
 });
 console.log(ans,"maximum using reduce method")
 
+// 6 practice questions
+// a. check if all numbers in our array are multiples of 10 or not
+const val10 = [20,30]
+let isMultipleOf10 = val10.every((x)=>x%10==0)
+console.log(isMultipleOf10,"ismultipleof10")
+
+//b. create a function to find the min number in an array
+let minVal = val.reduce((min,el)=>{
+    if(min<el){
+        return min
+    }else{
+        return el
+    }
+})
+console.log(minVal,"minval")
