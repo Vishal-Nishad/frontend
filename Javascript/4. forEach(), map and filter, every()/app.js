@@ -1,4 +1,4 @@
-// 01. forEach 
+// 👉 1. forEach 
 // arr.forEach(some function definition or name);
 ar = [1,2,3,4];
 let print = function(el){
@@ -27,7 +27,7 @@ st.forEach((student)=>{
 })
 
 
-//2. Map and filter function
+// 👉 2. Map and filter function
 // let newArr = arr.map(some function or name)
 let numarr = [1,2,3,4]
 let doublt = numarr.map((x)=>{return x*2})
@@ -45,7 +45,7 @@ let evenNum = num.filter((x)=>{
 })
 console.log(evenNum) //[2, 4, 2, 4, 6, 100]
 
-// 3. Every & Sum function
+// 👉 3. Every & Sum function
 // Every -> returns true if every element of array gives true for some function.
 // Else returns false
 
@@ -55,7 +55,7 @@ let res_n = n.every((i)=>(i%2==0));
 let res_m = m.every((i)=>{return i%2==0});
 console.log(res_n,res_m,"every method")
 
-//4. Reduce method -> Reduces the array to a sigle value
+// 👉 4. Reduce method -> Reduces the array to a sigle value
 // arr.reduce(reducer function with exactly 2 variables for(accumulator,element));
 
 let finalVal = m.reduce((res,el)=>{
@@ -64,7 +64,7 @@ let finalVal = m.reduce((res,el)=>{
 });
 console.log(finalVal,"reduce method")
 
-// 5. Finding maximum using reduce method
+// 👉 5. Finding maximum using reduce method
 let val = [4,56,3,4,23]
 let maxVal = (ar)=>{
     let res = 0
@@ -86,7 +86,7 @@ let ans = val.reduce((max,el)=>{
 });
 console.log(ans,"maximum using reduce method")
 
-// 6 practice questions
+// 👉 6 practice questions
 // a. check if all numbers in our array are multiples of 10 or not
 const val10 = [20,30]
 let isMultipleOf10 = val10.every((x)=>x%10==0)
@@ -102,7 +102,7 @@ let minVal = val.reduce((min,el)=>{
 })
 console.log(minVal,"minval")
 
-// 7. Default Parameters
+// 👉 7. Default Parameters
 // Giving a default value to the arguments
 // function func(a,b = 2){
 //do something
@@ -114,7 +114,7 @@ console.log(addition(10),"addition default arguments")
 console.log(addition(10,30),"addition default arguments")
 
 
-// 8. Spread
+// 👉 8. Spread
 // Expands an iterable(array,string etc) into multiple values
 //function func(...arr){//dosomething}
 let arVal = [10,110,30]
@@ -127,7 +127,7 @@ console.log(Math.min(arVal))
 console.log(Math.min(...arVal))
 
 
-// 9. Spread(Array Literals)
+// 👉 9. Spread (with Array Literals)
 let arr = [1,2,3,4,5]
 let newArr = [...arr] /// it creates a deepcopy/separate, changing/modification in 
 // newArr does not reflect/affect arr
@@ -135,4 +135,8 @@ let newArr = [...arr] /// it creates a deepcopy/separate, changing/modification 
 const odd = [3,5,7]
 const even = [2,4,6,8]
 let newNum = [...even,...odd]
-console.log(newNum,"newnum")
+console.log(newNum,"newnum") // [2, 4, 6, 8, 3, 5, 7] newnum
+
+
+
+// 👉 10. Spread (with Object Literal)
