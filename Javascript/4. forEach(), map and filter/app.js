@@ -44,3 +44,13 @@ let evenNum = num.filter((x)=>{
     return x%2==0;
 })
 console.log(evenNum)
+
+// 3. Every & Sum function
+// Every -> returns true if every element of array gives true for some function.
+// Else returns false
+
+let n = [2,4]
+let m = [1,2,3]
+let res_n = n.every((i)=>(i%2==0));
+let res_m = m.every((i)=>{return i%2==0});
+console.log(res_n,res_m)
