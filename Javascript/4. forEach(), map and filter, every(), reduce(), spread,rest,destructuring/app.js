@@ -140,3 +140,77 @@ console.log(newNum,"newnum") // [2, 4, 6, 8, 3, 5, 7] newnum
 
 
 // 👉 10. Spread (with Object Literal)
+const data = {
+    email:"vishal@gmail.com",
+    password:"abcd"
+}
+const newData = {...data}
+console.log(newData,"spread object literal")
+const newDataEtcKey = {...newData, id:123, country:"india"}
+console.log(newDataEtcKey)
+
+const arr5 = [3,2,45,43]
+const newArr5 = {...arr5}
+console.log(newArr5) // {0: 3, 1: 2, 2: 45, 3: 43}  // it will assign auto index as key
+
+
+
+// 👉 11. REST
+// Allow a function to take an indefinite number of arguments and bundle them in Array
+function printArgs(...args){
+    //arguments
+    for(let i = 0;i<args.length;i++){
+        console.log("function got: ", args[i])
+    }
+}
+printArgs("hello", "vishal",1,2,3,"nishad")
+
+// arguments -> it is not an array but a collections, means we can't use arr methods
+function minNum(){
+    console.log(arguments)
+    console.log(arguments.length)
+}
+minNum("heelo", 2,3,4)
+
+function sum(){
+    arguments.reduce((res,el)=>{res+el}) // it will throw error because it is not arr
+    // as these are iterable methods so we can't use with arguments as it is collection
+}
+// console.log(sum(4,5,32))
+
+function sumRest(...args){
+    return args.reduce((res,el)=>{
+        return res+el;
+    })
+}
+console.log(sumRest(4,5,33))
+
+
+// 👉 12. Array Destructing
+//Storing values of array into multiple variables
+
+let nums = ["vishal","hela","raven","tony","peter","bruce","abc","xyz"]
+// let winner = nums[0]
+// let runnerup = nums[1]
+// let secondrunnerup = nums[2]
+let [winner,runnerup,secondrunnerup,...others] = nums;
+console.log(winner)
+console.log(runnerup)
+console.log(secondrunnerup)
+console.log(others)
+
+
+// 👉 13. Object Destructing
+// 
+const student1 = {
+    name:"vishal",
+    age:15,
+    class:9,
+    username:"vis@were",
+    password:"abc"
+}
+let {username:user,age,password:secret ="if not in object then it print"} = student1
+// console.log(username) // will get errrorr username not defined
+console.log(user)
+console.log(age)
+console.log(secret)
