@@ -35,3 +35,20 @@ document.querySelector("div a");
 
 // querySelectorAll give all elements
 document.querySelectorAll("p") // select all p elements
+
+
+
+//👉 9. Setting content in objects
+// innerText -> Shows the visible text contained in a Node(which actually appear on webpage/Screen)
+
+// textContent -> Shows all the full text
+
+// innerHTML -> Shows the full markup
+
+
+// 👉 10. Manipulating Attributes
+// obj.getAttribute(attr)     // getter
+// obj.setAttribute(attr,val) // setter
+
+
+// 👉 11. Manipulating Style
