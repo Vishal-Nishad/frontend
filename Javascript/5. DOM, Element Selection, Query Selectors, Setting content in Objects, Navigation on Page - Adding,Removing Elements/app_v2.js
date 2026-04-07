@@ -52,3 +52,19 @@ document.querySelectorAll("p") // select all p elements
 
 
 // 👉 11. Manipulating Style
+// style property
+// obj.style
+let heading = document.querySelector("h1");
+heading.style.color = "purple";
+heading.style.color = "green";
+// heading.style.background-color // this is wrong as it support camelcase
+heading.style.backgroundColor = "yellow";
+
+// another example 
+let links = document.querySelectorAll(".box a");
+for(link of links){
+    link.style.color= "green"
+}
+for(let i = 0;i<links.length;i++){
+    links[i].style.color = "purple";
+}
