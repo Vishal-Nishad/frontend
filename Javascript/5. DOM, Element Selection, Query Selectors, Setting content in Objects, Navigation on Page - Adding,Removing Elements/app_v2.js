@@ -24,9 +24,14 @@ let tabObj = document.getElementsByTagName("p")  // it give us the full object
 console.log(imageObject)
 
 
-// 👉 3. Query Selectors
+// 👉 8. Query Selectors
 // query selectors is normally used more than normal selector like by id,class,tag
 //
-document.querySelector("h1")
-document.querySelector("#description")
-document.querySelector(".oldImg")
+document.querySelector("h1")//selects first p element
+document.querySelector("#description")// selects first element with id = myId
+document.querySelector(".oldImg")// selects first element with class = myclass
+
+document.querySelector("div a");
+
+// querySelectorAll give all elements
+document.querySelectorAll("p") // select all p elements
