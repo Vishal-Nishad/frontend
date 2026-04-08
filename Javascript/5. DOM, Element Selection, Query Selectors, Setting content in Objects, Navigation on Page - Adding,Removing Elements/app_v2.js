@@ -96,9 +96,16 @@ h4.parentElement
 h4.children
 
 let box = document.querySelector(".box");
-box.children;
+box.children;  
 box.childElementCount;
 
 let ul = document.querySelector("ul");
-ul.parentElement;
-ul.childElementCount;
+ul.parentElement; // give the parent element, as it always remain single
+ul.childElementCount; // give the count of total children
+ul.children; // output be like HTMLCollection(3) [li,li,li]
+
+ul.children[0]
+ul.children[2]
+
+ul.children[2].previousElementSibling;
+ul.children[1].nextElementSibling;
