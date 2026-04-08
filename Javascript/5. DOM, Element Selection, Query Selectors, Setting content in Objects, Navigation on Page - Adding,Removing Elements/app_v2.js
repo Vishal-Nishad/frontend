@@ -109,3 +109,46 @@ ul.children[2]
 
 ul.children[2].previousElementSibling;
 ul.children[1].nextElementSibling;
+
+// we can even change the style by using these
+ul.children[3].previousElementSibling.style.color = "green";
+
+
+
+
+// 👉 14. Adding Elements on Page
+// first create that new element -> document.createElement("p")
+
+// 4 ways of appending new element
+
+// a. appendChild(element)    // append inside tag,class etc
+// b. append(child)    // append inside same class, tag etc
+// c. prepend(element) // in start/first place
+// d. insertAdjacent(where, element)
+
+
+//example of appendng new element in any tag/class 
+let newP = document.createElement("p");
+console.dir(newP);
+newP.innerText = "Hi, i am a new p";
+let body = document.querySelector("body");
+body.appendChild(newp)
+
+// another example of appendChild
+let newbox = document.querySelector(".box");
+newbox.appendChild(newp)
+
+let btn = document.createElement("button");
+btn.innerText = "click me"
+box.appendChild(btn)
+
+
+// using append, using element k andr changes karna
+newp.append("this is new text");
+newp.append(btn)
+
+// using prepend 
+box.append(newp);
+
+
+// d. usinng insertAdjacent(where,element)
