@@ -82,3 +82,23 @@ for(let i = 0;i<links.length;i++){
 let heading = document.querySelector("h1");
 heading.classList;
 heading.classList.add("abc")
+
+
+
+// 👉 13. Navigation on Page
+// parentElement      // there is only single parent element always
+// children
+// previousElementSibling/nextElementSibling
+
+
+let h4 = document.querySelector("h1");
+h4.parentElement
+h4.children
+
+let box = document.querySelector(".box");
+box.children;
+box.childElementCount;
+
+let ul = document.querySelector("ul");
+ul.parentElement;
+ul.childElementCount;
