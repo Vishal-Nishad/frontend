@@ -51,8 +51,8 @@ document.querySelectorAll("p") // select all p elements
 // obj.setAttribute(attr,val) // setter
 
 
-// 👉 11. Manipulating Style
-// style property
+// 👉 11. Manipulating Style , although we don't use this much, as styling written in separate css block or .css file
+// using style property
 // obj.style
 let heading = document.querySelector("h1");
 heading.style.color = "purple";
@@ -68,3 +68,17 @@ for(link of links){
 for(let i = 0;i<links.length;i++){
     links[i].style.color = "purple";
 }
+
+
+// 👉 12. Manipulating Style
+// using classList
+// obj.classList
+
+// classList.add()   to add new classes
+// classList.remove() to remove classes
+// classList.contains() to check if class exist
+// classList.toggle() to toggle between add and remove, it deletes if already exist and add if not exists
+
+let heading = document.querySelector("h1");
+heading.classList;
+heading.classList.add("abc")
