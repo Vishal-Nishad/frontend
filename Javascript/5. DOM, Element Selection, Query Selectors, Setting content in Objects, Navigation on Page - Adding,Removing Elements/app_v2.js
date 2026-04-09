@@ -152,3 +152,18 @@ box.append(newp);
 
 
 // d. usinng insertAdjacent(where,element)
+let btn = document.createElement("button");
+btn.innerHTML = "new button!!!";
+let p = document.querySelector("p")
+
+p.insertAdjacentElement("beforebegin",btn)
+p.insertAdjacentElement("afterbegin",btn)
+p.insertAdjacentElement("beforeend",btn)
+p.insertAdjacentElement("afterend",btn)
+
+
+
+// 👉 15. Removing elements from page
+body.removeChild(btn);
+p.remove();
+body.remove();
