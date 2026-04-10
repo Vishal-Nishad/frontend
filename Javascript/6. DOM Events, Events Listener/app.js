@@ -23,3 +23,8 @@ function sayHello(){
 }
 
 btn.onclick = sayHello;
+
+
+
+// 👉 3. Event Listeners
+// addEventListener
