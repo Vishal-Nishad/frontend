@@ -59,3 +59,26 @@ let box = document.querySelector("div");
 box.addEventListener("mouseenter",function (){
     console.log("mouse inside div")
 })
+
+
+
+// 👉 6. This in Event Listeners
+// When 'this' is used in a callback of event handler of something, it refers to that
+//  something
+let btn4 = document.querySelector("#thisInAddELTest")
+btn4.addEventListener("click", function (){
+    console.log(this)  // here this refer to same selected element object, so it will print
+    // <button id="thisInAddELTest">This in addEventListener Test</button>
+    this.style.backgroundColor = "red"
+})
+
+function changeColor(){
+    console.log(this);
+    this.style.backgroundColor = "red"
+}
+
+let ele = document.querySelectorAll(".thisTest")
+
+for (let el of ele){
+    el.addEventListener("click",changeColor);
+}
