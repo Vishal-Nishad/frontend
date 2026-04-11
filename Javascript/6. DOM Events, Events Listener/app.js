@@ -45,3 +45,17 @@ let btn3 = document.querySelector("#addEventListenerDbc")
 btn3.addEventListener("dblclick", function (){
     console.log("you double clicked me");
 })
+
+
+
+// 👉 5. Event Listeners for Elements
+let para = document.querySelector("p")
+
+para.addEventListener("click", function (){
+    console.log("para was clicked")
+})
+
+let box = document.querySelector("div");
+box.addEventListener("mouseenter",function (){
+    console.log("mouse inside div")
+})
