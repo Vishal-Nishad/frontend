@@ -104,7 +104,7 @@ let inp = document.querySelector("input")
 // });
 
 inp.addEventListener("keydown", function (event){
-    console.log("code = ", event.code); // ArrowUP, ArrowDown, ArrowLeft, ArrowRight
+    console.log("key = ", event.key, "| code = ", event.code); // ArrowUP, ArrowDown, ArrowLeft, ArrowRight
     if (event.code == "ArrowUp"){
         console.log("character moves forward");
     }else if (event.code == "ArrowDown"){
@@ -114,4 +114,13 @@ inp.addEventListener("keydown", function (event){
     }else if (event.code == "ArrowRight"){
         console.log("character moves right");
     }
+});
+
+
+
+// 👉 8. Form Events
+
+let form = document.querySelector("form");
+form.addEventListener("submit", function (){
+    alert("form submitted");
 });
