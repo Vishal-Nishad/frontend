@@ -145,3 +145,20 @@ form.addEventListener("submit", function (event){
     console.log(user.value) // for input element, the entered value stored in value property
     alert(`Hi ${user.value}, your password is set to ${pass.value}`)
 });
+
+
+
+// 👉 10. More Events
+// Change Events -> The change event occurs when the value of an element has been changed
+// (only works on <input>, <textarea> and <select>elements)
+
+// Input event -> The input event fires when the value of an <input>,<select> or 
+// <textarea> element has been changed
+
+let inp1 = document.querySelector("#inpChangeEvent")
+
+let para1 = document.querySelector("#paraChangeEvent")
+inp1.addEventListener("change",function (){
+    console.log(inp1.value)
+    para1.innerText = inp1.value
+})
