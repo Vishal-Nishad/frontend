@@ -82,3 +82,23 @@ let ele = document.querySelectorAll(".thisTest")
 for (let el of ele){
     el.addEventListener("click",changeColor);
 }
+
+
+
+// 👉 7. Keyboard Events
+// 
+
+let btn5 = document.querySelector("#keyboardEvents")
+
+btn5.addEventListener("click",function (){
+    console.log(event) /// in every addEventListener callback function () we have default
+    // event as argument in it, likt function (event)
+    console.log("button clicked")
+})
+
+let inp = document.querySelector("input")
+inp.addEventListener("keydown", function (event){
+    console.log("key was pressed")
+    console.log("key = ", event.key, "and code = ", event.code)
+    
+});
