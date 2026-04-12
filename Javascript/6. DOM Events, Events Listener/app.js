@@ -121,6 +121,11 @@ inp.addEventListener("keydown", function (event){
 // 👉 8. Form Events
 
 let form = document.querySelector("form");
-form.addEventListener("submit", function (){
-    alert("form submitted");
+form.addEventListener("submit", function (event){
+    event.preventDefault();
+    let inp = document.querySelector("input")
+    console.dir(inp)
+    console.log(inp)
+    console.log(inp.innerText) // here in case of input, the entered value does not store here
+    console.log(inp.value) // for input element, the entered value stored in value property
 });
