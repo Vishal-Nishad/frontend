@@ -123,8 +123,22 @@ inp.addEventListener("keydown", function (event){
 let form = document.querySelector("form");
 form.addEventListener("submit", function (event){
     event.preventDefault();
-    let user = document.querySelector("#user")
-    let pass = document.querySelector("#pass")
+
+    // frequent way of accessing elements inside form
+    console.dir(form); // form.elements = special array-like DOM collection 
+    // with index access + named access
+
+    // let form = document.querySelector("form");
+
+    // console.log(form.elements[0]);      // first input
+    // console.log(form.elements.user);    // input with name="user" or id="user"
+    // console.log(form.elements.length);  // total controls
+
+    let user = this.elements[0]; // is same as form.elements[0]
+    let pass = this.elements[1];
+
+    // let user = document.querySelector("#user")
+    // let pass = document.querySelector("#pass")
     console.dir(user)
     console.log(user)
     console.log(user.innerText) // here in case of input, the entered value does not store here
