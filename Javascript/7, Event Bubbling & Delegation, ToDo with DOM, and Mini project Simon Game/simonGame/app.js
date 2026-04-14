@@ -12,6 +12,7 @@ document.addEventListener("keypress", function (){
     if(started == false){
         console.log("game started");
         started = true;
+        levelUp();
     }
     // console.log("hello")
 });
@@ -21,7 +22,7 @@ function btnFlash(btn){
     btn.classList.add("flash");
     setTimeout(function () {
         btn.classList.remove("flash");
-    }, 1000);
+    }, 300);
 }
 
 function levelUp(){
@@ -31,6 +32,15 @@ function levelUp(){
     let randColor = btns[randIdx];
     let randbtn = document.querySelector(`.${randColor}`);
     btnFlash(randbtn);
-    
+    console.log(randIdx)
+    console.log(randColor)
+    console.log(randbtn)
 }
+
+
+
+
+
+
+
 
