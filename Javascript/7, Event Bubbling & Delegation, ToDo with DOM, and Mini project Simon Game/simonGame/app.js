@@ -90,7 +90,8 @@ function reset(){
     level = 0;
 }
 
-
+// to add functionality of always displayig 
+// highest score on display
 
 
 
