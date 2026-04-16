@@ -185,16 +185,20 @@ savedToDb("kevin").then(()=>{
 // 👉 10. Results & Errors in Promises, our promises return resolve or reject always
 // which we can pass in .then and .catch
 
-savedToDb("kevin").then(()=>{
+savedToDb("kevin").then((result)=>{
     console.log("\n")
     console.log("kevin data1 saved.");
+    console.log("result of promise: ", result)
     return savedToDb("kevin logged in")
-}).then(()=>{
+}).then((result)=>{
     console.log("kevin data2 saved");
+    console.log("result of promise: ", result)
     return savedToDb("hello welcome")
-}).then(()=>{
+}).then((result)=>{
     console.log("kevin data3 saved");
-}).catch(()=>{
+    console.log("result of promise: ", result)
+}).catch((result)=>{
     console.log("\n")
     console.log("kevin promise was rejected")
+    console.log("error of promise: ", result)
 })
