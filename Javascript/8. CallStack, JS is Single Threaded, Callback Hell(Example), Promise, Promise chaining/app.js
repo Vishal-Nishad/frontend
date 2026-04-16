@@ -152,3 +152,49 @@ savedToDb("vishal").then(()=>{
 
 
 // 👉 9. Promise chaining
+
+savedToDb("raven").then(()=>{
+    console.log("\n")
+    console.log("\n")
+    console.log("raven data1 saved.");
+    savedToDb("raven logged in").then(()=>{
+        console.log("raven data2 saved");    // if outer got resolve then only inner will executed
+    });
+}).catch(()=>{
+    console.log("\n")
+    console.log("\n")
+    console.log("promis was rejected");
+});
+
+savedToDb("kevin").then(()=>{
+    console.log("\n")
+    console.log("kevin data1 saved.");
+    return savedToDb("kevin logged in")
+}).then(()=>{
+    console.log("kevin data2 saved");
+    return savedToDb("hello welcome")
+}).then(()=>{
+    console.log("kevin data3 saved");
+}).catch(()=>{
+    console.log("\n")
+    console.log("kevin promise was rejected")
+})
+
+
+
+// 👉 10. Results & Errors in Promises, our promises return resolve or reject always
+// which we can pass in .then and .catch
+
+savedToDb("kevin").then(()=>{
+    console.log("\n")
+    console.log("kevin data1 saved.");
+    return savedToDb("kevin logged in")
+}).then(()=>{
+    console.log("kevin data2 saved");
+    return savedToDb("hello welcome")
+}).then(()=>{
+    console.log("kevin data3 saved");
+}).catch(()=>{
+    console.log("\n")
+    console.log("kevin promise was rejected")
+})
