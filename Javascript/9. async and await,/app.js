@@ -10,7 +10,7 @@ async function greet(params) {
 }
 
 let demo = async () => {
-    return "hello arrow world" // return a promise
+    return "hello from arrow function" // return a promise
 }
 
 async function asyncDemo() {
@@ -27,6 +27,13 @@ greet().then((result)=>{
 })
 
 asyncDemo().then((result)=>{
+    console.log("promise was resolved");
+    console.log("promise result is: ",result)
+}).catch((err)=>{
+    console.log("promise was rejected with err: ",err)
+})
+
+demo().then((result)=>{
     console.log("promise was resolved");
     console.log("promise result is: ",result)
 }).catch((err)=>{
