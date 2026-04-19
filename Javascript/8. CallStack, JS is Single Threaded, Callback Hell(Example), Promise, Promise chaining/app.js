@@ -113,6 +113,8 @@ saveToDb("vishal",()=>{
 
 function savedToDb(data){
     return new Promise((resolve,reject)=>{ // whenever a promise called these two args are by default present
+        // and if we are using promise then it is mandatory to call resolve means when condition satisfied or work done
+        // otherwise that promise will stuck in pending state forever
         let internetSpeed = Math.floor(Math.random()*10 + 1);
         if(internetSpeed > 4){
             resolve("success: data was saved");
@@ -201,4 +203,35 @@ savedToDb("kevin").then((result)=>{
     console.log("\n")
     console.log("kevin promise was rejected")
     console.log("error of promise: ", result)
+})
+
+
+
+
+// 👉 11. refactoring old change color code now using promise inplace of callback hell
+let h1PromiseExample = document.querySelector("#promiseExample")
+
+function changeColorPromise(color,delay){
+    return new Promise((resolve,reject)=>{
+        setTimeout(() => {
+            h1PromiseExample.style.color = color;
+            resolve("color changed");
+        }, delay);
+    })
+}
+
+changeColorPromise("red",1000).then(()=>{
+    console.log("red color was completed");
+    return changeColorPromise("orange",1000);
+}).then(()=>{
+    console.log("orange color was completed");
+    return changeColorPromise("green",1000);
+}).then(()=>{
+    console.log("green color was completed");
+    return changeColorPromise("blue",1000);
+}).then(()=>{
+    console.log("blue color was completed");
+    return changeColorPromise("black",1000);
+}).then(()=>{
+    console.log("black color was completed")
 })
