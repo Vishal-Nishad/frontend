@@ -39,3 +39,36 @@ demo().then((result)=>{
 }).catch((err)=>{
     console.log("promise was rejected with err: ",err)
 })
+
+
+
+
+// 👉 2. await keyword in async function
+
+async function randomNum(){
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            let num = Math.floor(Math.random() * 100);
+            console.log(num);
+            resolve();
+        }, 1000);
+    });
+}
+
+async function demoWithoutAwait() {
+    randomNum();
+    randomNum();
+    randomNum();// without await keyword all three random numbers get printed at same time
+    console.log("hello")
+}
+
+async function demoWithAwait() {
+    await randomNum();
+    await randomNum();
+    console.log("hello")
+    randomNum();// without await keyword all three random numbers get printed at same time
+}
+
+demoWithoutAwait();
+console.log("  hello")
+demoWithAwait();
