@@ -74,6 +74,8 @@ console.log("  hello")
 demoWithAwait();
 
 
+
+// 👉 3. await keyword handling errors, in async/await
 let h1 = document.querySelector("h1");
 
 function changeColor(color,delay){
@@ -90,16 +92,19 @@ function changeColor(color,delay){
     })
 }
 
-async function demo() {
-    await changeColor("red",1000);
-    await changeColor("green",1000);
-    await changeColor("orange",1000);
-    await changeColor("blue",1000);
-
+async function demoChangeColor() {
+    try{
+        await changeColor("red",1000);
+        await changeColor("green",1000);
+        await changeColor("orange",1000);
+        await changeColor("blue",1000);
+    }catch(err){
+        console.log("error caught:");
+        console.log(err)
+    }
     let a = 5;
     console.log(a);
     console.log("new number")
 }
+demoChangeColor()
 
-
-// 👉 3. await keyword handling errors, in async/await
