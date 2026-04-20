@@ -108,3 +108,17 @@ async function demoChangeColor() {
 }
 demoChangeColor()
 
+
+// 👉 7. Accessing JSON data
+// JSON-> JavaScript Object Notation
+
+// JSON.parse(data) method  -> to parse a string data into a JS object
+// JSON.stringify(json) method -> to parse a JS object data into JSON
+
+let jsonRes = '{"fact":"hello i am vishal this is json parse", "length":78}';
+let validRes = JSON.parse(jsonRes);
+console.log(validRes.fact) // if we don't do parse then it will throw error as it is in str
+
+
+
+
