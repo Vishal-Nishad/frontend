@@ -66,9 +66,40 @@ async function demoWithAwait() {
     await randomNum();
     await randomNum();
     console.log("hello")
-    randomNum();// without await keyword all three random numbers get printed at same time
+    randomNum();
 }
 
 demoWithoutAwait();
 console.log("  hello")
 demoWithAwait();
+
+
+let h1 = document.querySelector("h1");
+
+function changeColor(color,delay){
+    return new Promise((resolve,reject)=>{
+        setTimeout(() => {
+            let num = Math.floor(Math.random()*5 + 1);
+            if(num>3){
+                reject("promise rejected");
+            }
+            h1.style.color = color;
+            console.log(`color changed to ${color}`);
+            resolve("color changed");  
+        }, delay);
+    })
+}
+
+async function demo() {
+    await changeColor("red",1000);
+    await changeColor("green",1000);
+    await changeColor("orange",1000);
+    await changeColor("blue",1000);
+
+    let a = 5;
+    console.log(a);
+    console.log("new number")
+}
+
+
+// 👉 3. await keyword handling errors, in async/await
