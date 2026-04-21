@@ -127,6 +127,12 @@ let student = {
 console.log(JSON.stringify(student))
 
 
+// 👉 9. What is Ajax 
+// Asynchronous JavaScript and XML
+// ajax is the whole process of making request and getting response, as this whole process
+//is async, as earlier before json all response were in xml, so it known as on its name
+// even in json usage now people call it ajax because of earlier notation coming on
+
 // 👉 15. making api call using async/await
 
 let url = "https://catfact.ninja/fact";
