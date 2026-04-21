@@ -120,5 +120,33 @@ let validRes = JSON.parse(jsonRes);
 console.log(validRes.fact) // if we don't do parse then it will throw error as it is in str
 
 
+let student = {
+    name:"vishal",
+    marks:100,
+};
+console.log(JSON.stringify(student))
 
+
+// 👉 15. making api call using async/await
+
+let url = "https://catfact.ninja/fact";
+
+async function getFacts() {
+    try{
+        let res = await fetch(url);
+        let data = await res.json();
+        console.log("full data json: ",data)
+        console.log("data.fact: ", data.fact);
+
+        let res2 = await fetch(url);
+        let data2 = await res2.json();
+        console.log("full data json: ",data2)
+        console.log("data.fact: ", data2.fact);
+    }catch(e){
+        console.log("error - ",e);
+    }
+    console.log("bye");
+}
+
+getFacts()
 
