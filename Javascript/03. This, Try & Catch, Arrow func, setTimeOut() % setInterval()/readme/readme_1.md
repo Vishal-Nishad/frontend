@@ -1,5 +1,4 @@
 # 📘 JavaScript — `this`, Arrow Functions, Error Handling & Timers
-> **Interview-Ready Reference** | Product-Based Company Prep
 
 ---
 
