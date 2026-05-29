@@ -1,5 +1,4 @@
 # 📘 JavaScript — Async/Await, JSON & Fetch API
-> **Interview-Ready Reference** | Product-Based Company Prep
 
 ---
 
