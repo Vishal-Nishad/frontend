@@ -1,0 +1,25 @@
+div{
+    background-color: aqua;
+    height: 400px;
+    width: 600px;
+    animation-name: boxAnimation;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-name: fontAnimation;
+    animation-duration: 10s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+@keyframes boxAnimation{
+    from{background-color: aquamarine;}
+    to{background-color: bisque;}
+}
+@keyframes fontAnimation{
+    from{font-size: 20px;}
+    to{font-size: 80px;}
+    from{font-style: italic;}
+    to{font-style: oblique;}
+}
