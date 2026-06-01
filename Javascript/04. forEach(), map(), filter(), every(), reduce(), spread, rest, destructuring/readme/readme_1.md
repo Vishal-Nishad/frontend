@@ -1,5 +1,5 @@
 # 📘 JavaScript — Array Methods, Spread, Rest & Destructuring
-> **Interview-Ready Reference** | Product-Based Company Prep
+> **Interview-Ready Reference** |  Company Prep
 
 ---
 
@@ -786,4 +786,4 @@ console.log(myFilter([1,2,3,4,5], x => x % 2 === 0)); // [2, 4]
 
 ---
 
-> 💡 **Tip for Product-Based Interviews:** This entire file is **live coding territory**. Companies like Razorpay, Atlassian, Swiggy, and Zepto give problems like: "Group these orders by status", "Get the total cart value", "Find users above a threshold" — all solved with `map`, `filter`, `reduce` chained together. Practice writing these from memory without documentation. Destructuring is tested in React/Node contexts — they may show you a component or API handler and ask you to rewrite it cleanly.
+> 💡 **Tip for  Interviews:** This entire file is **live coding territory**. Companies like Razorpay, Atlassian, Swiggy, and Zepto give problems like: "Group these orders by status", "Get the total cart value", "Find users above a threshold" — all solved with `map`, `filter`, `reduce` chained together. Practice writing these from memory without documentation. Destructuring is tested in React/Node contexts — they may show you a component or API handler and ask you to rewrite it cleanly.

@@ -387,7 +387,7 @@ const dice = Math.floor(Math.random() * 6) + 1;
 // + 1 shifts to {1,2,3,4,5,6}
 ```
 
-**Production insight:** Cryptographically secure random numbers (for tokens, OTPs, game seeds) should use `crypto.getRandomValues()` in the browser or Node's `crypto` module — **never** `Math.random()`. This is asked in security-conscious product company interviews.
+**Production insight:** Cryptographically secure random numbers (for tokens, OTPs, game seeds) should use `crypto.getRandomValues()` in the browser or Node's `crypto` module — **never** `Math.random()`. This is asked in security-conscious company interviews.
 
 ```js
 // Secure random integer 1–6 (Node.js)

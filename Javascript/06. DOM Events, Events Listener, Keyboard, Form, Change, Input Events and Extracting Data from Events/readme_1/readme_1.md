@@ -1,5 +1,5 @@
 # 📘 JavaScript — DOM Events & Event Handling
-> **Interview-Ready Reference** | Product-Based Company Prep
+> **Interview-Ready Reference** |  Company Prep
 
 ---
 
@@ -614,4 +614,4 @@ Event Delegation     → one parent listener catches all child events
 
 ---
 
-> 💡 **Tip for Product-Based Interviews:** Event delegation is the concept that separates people who learned JS from people who've built real products. Interviewers at Razorpay, Swiggy, Zepto love asking *"you have a dynamic list of 500 items — how do you handle click events efficiently?"* The answer is one parent listener using `e.target` — not 500 individual listeners. Also, `event.preventDefault()` on form submit is the entry point into the **entire fetch/async API** flow — master this and the next file on Promises/Async-Await becomes natural.
+> 💡 **Tip for  Interviews:** Event delegation is the concept that separates people who learned JS from people who've built real products. Interviewers at Razorpay, Swiggy, Zepto love asking *"you have a dynamic list of 500 items — how do you handle click events efficiently?"* The answer is one parent listener using `e.target` — not 500 individual listeners. Also, `event.preventDefault()` on form submit is the entry point into the **entire fetch/async API** flow — master this and the next file on Promises/Async-Await becomes natural.

@@ -1,5 +1,5 @@
 # 📘 JavaScript — DOM Manipulation
-> **Interview-Ready Reference** | Product-Based Company Prep
+> **Interview-Ready Reference** |  Company Prep
 
 ---
 
@@ -552,4 +552,4 @@ REMOVING
 
 ---
 
-> 💡 **Tip for Product-Based Interviews:** Pure DOM questions are rare at top companies — but DOM knowledge is tested **through React questions**. When they ask "how does React's virtual DOM differ from the real DOM?" or "why does React batch updates?" — your answer needs this foundation. Understanding reflows, why you avoid direct style mutation, and why `classList` > `style` directly shows you think in performance terms — exactly what product companies want.
+> 💡 **Tip for  Interviews:** Pure DOM questions are rare at top companies — but DOM knowledge is tested **through React questions**. When they ask "how does React's virtual DOM differ from the real DOM?" or "why does React batch updates?" — your answer needs this foundation. Understanding reflows, why you avoid direct style mutation, and why `classList` > `style` directly shows you think in performance terms — exactly what product companies want.

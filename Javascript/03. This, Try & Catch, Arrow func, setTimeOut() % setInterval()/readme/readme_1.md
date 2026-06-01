@@ -621,4 +621,4 @@ Arrow + this:
 
 ---
 
-> 💡 **Tip for Product-Based Interviews:** The `this` keyword is a guaranteed topic at every product-based company. They especially love the callback problem — "*why is `this` undefined inside `setTimeout`?*" — and the fix using an arrow function. If you can explain the **event loop** alongside `setTimeout`, you signal senior-level understanding. Pair this with closure knowledge from the previous file and you've covered the top 3 most-asked JS interview topics.
+> 💡 **Tip for  Interviews:** The `this` keyword is a guaranteed topic at every  company. They especially love the callback problem — "*why is `this` undefined inside `setTimeout`?*" — and the fix using an arrow function. If you can explain the **event loop** alongside `setTimeout`, you signal senior-level understanding. Pair this with closure knowledge from the previous file and you've covered the top 3 most-asked JS interview topics.

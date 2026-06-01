@@ -48,7 +48,7 @@ greet(); // ❌ TypeError — not hoisted
 const greet = function() { console.log("Hello"); };
 ```
 
-> This is one of the most-tested differences in product-based interviews — **hoisting of declarations vs expressions.**
+> This is one of the most-tested differences in  interviews — **hoisting of declarations vs expressions.**
 
 ---
 
@@ -254,7 +254,7 @@ function concatStrArr(arr) {
 console.log(concatStrArr(["hello", " ", "vishal"])); // "hello vishal"
 ```
 
-> `.reduce()` is a must-know for product-based interviews. Expect to implement `sum`, `concat`, `flatten`, `groupBy` all with it.
+> `.reduce()` is a must-know for  interviews. Expect to implement `sum`, `concat`, `flatten`, `groupBy` all with it.
 
 ---
 
@@ -436,7 +436,7 @@ console.log(increment()); // 3
 // count is private — can't access it from outside
 ```
 
-> **Closures are one of the top 3 most asked JS concepts in product-based interviews.** The factory function pattern is the most natural way to understand them.
+> **Closures are one of the top 3 most asked JS concepts in  interviews.** The factory function pattern is the most natural way to understand them.
 
 ---
 
@@ -558,4 +558,4 @@ Closure              → inner function remembers outer function's variables
 
 ---
 
-> 💡 **Tip for Product-Based Interviews:** HOFs, closures, and `return` vs `console.log` are tested heavily because they reveal whether you understand **how JS actually executes code** — not just the syntax. When you see `.map()`, `.filter()`, `.reduce()` — recognize them as higher-order functions and know how to write custom versions from scratch. That's what separates candidates at Flipkart, Razorpay, Atlassian, etc.
+> 💡 **Tip for  Interviews:** HOFs, closures, and `return` vs `console.log` are tested heavily because they reveal whether you understand **how JS actually executes code** — not just the syntax. When you see `.map()`, `.filter()`, `.reduce()` — recognize them as higher-order functions and know how to write custom versions from scratch. That's what separates candidates at Flipkart, Razorpay, Atlassian, etc.

@@ -148,7 +148,7 @@ const tweet = {
         handle: "@vishal123",
         verified: false
     },
-    content: "Cracked my first product-based interview! 🔥",
+    content: "Cracked 🔥",
     likes: 2400,
     reposts: 89,
     tags: ["#coding", "#placement"],
@@ -470,4 +470,4 @@ Random int (a–b):  Math.floor(Math.random() * (b - a + 1)) + a
 
 ---
 
-> 💡 **Tip for Product-Based Interviews:** You'll almost never be asked to just "explain objects." Instead, they'll give you a data structure like an array of objects and ask you to filter, map, reduce, or transform it. Make sure you're fluent with `.map()`, `.filter()`, `.find()`, `.reduce()` on arrays of objects — that's where 80% of JS DSA interview questions live.
+> 💡 **Tip for  Interviews:** You'll almost never be asked to just "explain objects." Instead, they'll give you a data structure like an array of objects and ask you to filter, map, reduce, or transform it. Make sure you're fluent with `.map()`, `.filter()`, `.find()`, `.reduce()` on arrays of objects — that's where 80% of JS DSA interview questions live.

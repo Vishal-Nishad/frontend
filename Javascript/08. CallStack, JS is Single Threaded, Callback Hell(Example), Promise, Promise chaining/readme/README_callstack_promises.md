@@ -1,5 +1,5 @@
 # 📘 JavaScript — Call Stack, Callback Hell & Promises
-> **Interview-Ready Reference** | Product-Based Company Prep
+> **Interview-Ready Reference** |  Company Prep
 
 ---
 
@@ -687,4 +687,4 @@ PROMISE UTILITIES
 
 ---
 
-> 💡 **Tip for Product-Based Interviews:** Promises and the Event Loop are the **two most asked JS internals topics** at every product company. They test this because it reveals whether you understand *why* JS is designed the way it is — not just how to use it. The follow-up to every Promise question is "now rewrite this using `async/await`" — which is just syntactic sugar over Promises. You've already mastered the hard part. Async/Await will feel like a natural upgrade when you see it next. At companies like Razorpay, Phonepe, and Swiggy — where every feature involves API calls, payment flows, and sequential async operations — this knowledge is non-negotiable.
+> 💡 **Tip for  Interviews:** Promises and the Event Loop are the **two most asked JS internals topics** at every product company. They test this because it reveals whether you understand *why* JS is designed the way it is — not just how to use it. The follow-up to every Promise question is "now rewrite this using `async/await`" — which is just syntactic sugar over Promises. You've already mastered the hard part. Async/Await will feel like a natural upgrade when you see it next. At companies like Razorpay, Phonepe, and Swiggy — where every feature involves API calls, payment flows, and sequential async operations — this knowledge is non-negotiable.

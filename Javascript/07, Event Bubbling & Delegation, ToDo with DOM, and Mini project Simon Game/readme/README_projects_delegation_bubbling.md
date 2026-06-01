@@ -1,5 +1,5 @@
 # 📘 JavaScript — Event Delegation, Bubbling & Real Projects
-> **Interview-Ready Reference** | Product-Based Company Prep
+> **Interview-Ready Reference** |  Company Prep
 
 ---
 
@@ -590,4 +590,4 @@ closest(selector)   → walks UP tree, finds nearest matching ancestor
 
 ---
 
-> 💡 **Tip for Product-Based Interviews:** The Simon Game and Todo App are the two most common **"walk me through your project"** mini-projects asked at product companies. Interviewers won't just ask "does it work" — they'll ask "how is state managed?", "how does the sequence comparison work?", "why event delegation for the delete buttons?" and "what bugs exist?". Being able to spot the `* 3` vs `* 4` bug yourself, explain the delegation pattern, and describe state as "module-scoped variables that persist across calls" — these answers directly map to how React, Redux, and real frontend architecture works.
+> 💡 **Tip for  Interviews:** The Simon Game and Todo App are the two most common **"walk me through your project"** mini-projects asked at product companies. Interviewers won't just ask "does it work" — they'll ask "how is state managed?", "how does the sequence comparison work?", "why event delegation for the delete buttons?" and "what bugs exist?". Being able to spot the `* 3` vs `* 4` bug yourself, explain the delegation pattern, and describe state as "module-scoped variables that persist across calls" — these answers directly map to how React, Redux, and real frontend architecture works.
