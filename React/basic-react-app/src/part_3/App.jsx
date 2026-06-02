@@ -42,6 +42,11 @@ let inner = outer();
 inner()  // this will work perfectly fine, and give o/p = 30
 */
 
+// 👉👉 9. Re-render: How does it work
+
+// 👉👉 10. Callback in setState Function i.e updater function: how to change state
+// when it depends on the current value
+
 function App(){
     return (
         <>
